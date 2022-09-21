@@ -17,3 +17,5 @@ fi
 
 URL=$(cat /var/lib/jenkins/jobs/sample-test1/builds/$BUILD_NUMBER/log | grep Uploaded | grep war |xargs -n1 | grep ^http)
 sed -i -e "s|URL-LOC|$URL|" deploy.yml
+hi
+how
